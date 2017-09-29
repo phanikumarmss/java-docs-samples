@@ -14,20 +14,12 @@
  * permissions and limitations under the License.
  */
 
-package com.google.appengine.sparkdemo;
+package com.google.appengine.sparkdemo;import static spark.Spark.*;
 
-import static spark.Spark.port;
-
-import com.google.cloud.datastore.DatastoreOptions;
+import static spark.Spark.*;
 
 public class Main {
-
-  /**
-   * Starts the webapp on localhost:8080.
-   */
-  public class Main {
     public static void main(String[] args) {
         get("/hello", (req, res) -> "Hello World");
     }
-}
 }
